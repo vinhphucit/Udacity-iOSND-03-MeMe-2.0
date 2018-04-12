@@ -41,6 +41,11 @@ class EditMemeViewController: UIViewController, UINavigationControllerDelegate, 
         btnCamera.isEnabled = UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera)
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        
+        super.viewWillDisappear(animated)
+        unsubscribeFromKeyboardNotifications()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -55,14 +60,21 @@ class EditMemeViewController: UIViewController, UINavigationControllerDelegate, 
         let activityController = UIActivityViewController(activityItems: [memedImage], applicationActivities: nil)
         
         activityController.completionWithItemsHandler = { activity, success, items, error in
-            let meme = self.save()
-            if let choosedMeme = self.choosedMeme, let memeIndex = self.memeIndex {
-                self.appDelegate.editMeme(meme: meme, position: memeIndex)
+            
+            if success{
                 
-            }else {
-                self.appDelegate.addMeme(meme: meme)
                 
+                let meme = self.save()
+                if let choosedMeme = self.choosedMeme, let memeIndex = self.memeIndex {
+                    self.appDelegate.editMeme(meme: meme, position: memeIndex)
+                    
+                }else {
+                    self.appDelegate.addMeme(meme: meme)
+                    
+                }
             }
+            
+            
             
             self.dismiss(animated: true, completion: {                    
             })

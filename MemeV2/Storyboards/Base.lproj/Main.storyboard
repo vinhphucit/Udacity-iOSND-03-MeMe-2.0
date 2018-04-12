@@ -36,7 +36,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Sg-To-6jU">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Sg-To-6jU">
                                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 </imageView>
                                             </subviews>
@@ -103,7 +103,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZgQ-Ap-Leq">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZgQ-Ap-Leq">
                                                     <rect key="frame" x="10" y="10" width="60" height="60"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="60" id="0Q9-P1-fOn"/>
@@ -181,7 +181,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fTL-jQ-YBI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fTL-jQ-YBI">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                             </imageView>
                         </subviews>
@@ -232,7 +232,6 @@
         <!--Navigation Controller-->
         <scene sceneID="Hqx-zD-DSd">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3QM-M9-Ruo" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b3P-xD-Uoy" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="table_30x30" selectedImage="table_30x30" id="cst-aJ-bn5"/>
                     <toolbarItems/>
@@ -245,13 +244,13 @@
                         <segue destination="5qv-hM-iiL" kind="relationship" relationship="rootViewController" id="AsE-or-3w6"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3QM-M9-Ruo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-558.39999999999998" y="-678.26086956521749"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zqs-fX-X6P">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ElI-dV-Lqy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6kw-dY-ul6" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="collection_30x30" selectedImage="collection_30x30" id="RvY-98-SZn"/>
                     <toolbarItems/>
@@ -264,6 +263,7 @@
                         <segue destination="oaL-ZI-vcw" kind="relationship" relationship="rootViewController" id="dMM-ko-xni"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ElI-dV-Lqy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-559" y="169"/>
         </scene>
@@ -315,7 +315,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="dYd-GR-3xE"/>
                                 </items>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="srM-nK-lK0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="srM-nK-lK0">
                                 <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZGR-Ns-EeT">
@@ -393,6 +393,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="aGR-PI-38U"/>
-        <segue reference="wGQ-QN-xDn"/>
+        <segue reference="i9C-le-AGk"/>
     </inferredMetricsTieBreakers>
 </document>
